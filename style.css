@@ -1,0 +1,97 @@
+td {
+    height: 50px;
+    width: 50px;
+    border: 0;
+}
+
+td:hover {
+    background-color: red !important;
+}
+
+span {
+    pointer-events: none;
+}
+
+table {
+    border-collapse: collapse;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+tr {
+    position: relative;
+    border: 1px solid;
+}
+
+
+table tr:nth-child(odd) td:nth-child(even) {
+    background-color: black;
+}
+
+table tr:nth-child(even) td:nth-child(odd) {
+    background-color: black;
+}
+
+table tr:nth-child(even) td:nth-child(even) {
+    background-color: burlywood;
+}
+
+table tr:nth-child(odd) td:nth-child(odd) {
+    background-color: burlywood;
+}
+
+tr td:first-child span:first-child{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: -20px;
+}
+
+tr td:last-child span:last-child{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 425px;
+}
+
+tr:nth-child(1) td span {
+    position: absolute;
+    transform: translate(150%,0 );
+    bottom: 60px;
+}
+
+tr:nth-child(8) td span {
+    position: absolute;
+    transform: translate(150%,0 );
+    bottom: -30px;
+}
+
+tr:nth-child(1) td:nth-child(1) span:first-child {
+    position: absolute;
+    transform: translate(-50%, 30%);
+    bottom: 20px;
+}
+
+tr:nth-child(8) td:nth-child(1) span:first-child {
+    position: absolute;
+    transform: translate(-50%, 30%);
+    bottom: 20px;
+}
+
+tr:nth-child(1) td:nth-child(8) span:last-child {
+    position: absolute;
+    transform: translate(-50%, 30%);
+    bottom: 20px;
+}
+
+tr:nth-child(8) td:nth-child(8) span:last-child {
+    position: absolute;
+    transform: translate(-50%, 30%);
+    bottom: 20px;
+}
